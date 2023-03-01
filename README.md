@@ -1,4 +1,4 @@
-# barcodecustom
+# Custom barcode scanner PCF control
 
 A custom barcode component based on the HTML5 qr code scanner library ([https://www.npmjs.com/package/html5-qrcode](https://www.npmjs.com/package/html5-qrcode)). The control can be used in canvas apps.
 
