@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="pocControl" constructor="BarcodeScanner" version="0.0.1" display-name-key="BarcodeScanner" description-key="BarcodeScanner description" control-type="standard" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <property name="ResetCamera" display-name-key="Reset Camera" description-key="Reset Camera" of-type="TwoOptions" usage="input" required="true" />
+    <property name="CameraMode" display-name-key="Camera Mode" description-key="Set to prefer front or back camera" usage="input" of-type="Enum" required="true" hidden="true">
+      <value name="FrontCamera" display-name-key="Front Camera" description-key="Prefer front camera">Front Camera</value>
+      <value name="BackCamera" display-name-key="Back Camera" description-key="Prefer back camera" default="true">Back Camera</value>
+    </property>
+    <property name="Value" display-name-key="Value" description-key="The scanned value" of-type="SingleLine.Text" usage="output" required="true" />
+    <property name="RawValue" display-name-key="RawValue" description-key="The raw scanned barcode type" of-type="SingleLine.Text" usage="output" required="true" />
+    <property name="BarcodeType" display-name-key="BarcodeType" description-key="The scanned barcode type" of-type="SingleLine.Text" usage="output" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>
